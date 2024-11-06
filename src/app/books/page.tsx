@@ -226,7 +226,7 @@ export default function Books() {
 
           {/* Genre Filter */}
           <div className="mb-8 opacity-0 animate-fade-in-delay">
-            <h2 className="text-lg font-semibold mb-3">Filter by Genre</h2>
+            <h2 className="text-lg font-semibold mb-3">Genre</h2>
             <div className="flex flex-wrap gap-2">
               {allGenres.map((genre) => (
                 <button
