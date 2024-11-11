@@ -17,8 +17,8 @@ export default function Home() {
           </div>
 
           <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl text-center px-4 opacity-0 animate-fade-in-delay">
-            Software Engineer based in the DMV. <br className="hidden sm:block" />
-            Currently building innovative solutions at Circlez and Cvrve. <br className="hidden sm:block" />
+            Software Engineer based in Virginia. <br className="hidden sm:block" />
+            Currently building innovative solutions at <Link href="https://circlez-online.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-gray-400 transition-colors">Circlez</Link> and <Link href="https://cvrve.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-gray-400 transition-colors">Cvrve</Link>. <br className="hidden sm:block" />
             Passionate about tech, reading, and continuous learning.
           </p>
 

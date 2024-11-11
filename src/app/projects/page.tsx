@@ -61,7 +61,7 @@ const projects: Project[] = [
   },
   {
     title: "Pomodoro Timer",
-    description: "A hardware-based timer designed to assist veterans with PTSD and Combat Stress in maintaining focus. Features 25-minute work intervals with customizable break periods, LED indicators, and an adjustable LCD display.",
+    description: "Built a hardware-based productivity timer using Arduino. Features include an LCD display for time tracking, dual LED indicators for work/break periods, and adjustable screen contrast via potentiometer. Implemented custom timing logic for 25/5/15-minute intervals.",
     tech: ["Arduino", "C", "Hardware", "LCD", "Electronics"],
     link: "https://devpost.com/software/pomodoro-timer-2nhiq1",
     status: "Completed",
