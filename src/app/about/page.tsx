@@ -1,7 +1,7 @@
 import PageLayout from '@/components/PageLayout';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaMicrophoneAlt } from 'react-icons/fa';
 
 export default function About() {
   return (
@@ -100,13 +100,13 @@ export default function About() {
                 title="Lead Mathematics Instructor"
                 company="Mathnasium"
                 period="December 2021 – January 2023"
-                description="Managed 60+ student learning plans, trained 14 instructors, and developed teaching materials with high accuracy in grading and assessment."
+                description="Managed 60+ student learning plans, trained 8 instructors, and developed a comprehensive instructor handbook."
               />
               <ExperienceItem 
                 title="Center Assistant"
                 company="Kumon"
                 period="August 2018 – December 2021"
-                description="Managed 60+ student learning plans, trained 14 instructors, and developed teaching materials with high accuracy in grading and assessment."
+                description="Assisted in grading 24,000+ student folders with near-perfect accuracy, trained 6 instructors in teaching methodologies."
               />
             </div>
           </section>
@@ -144,6 +144,39 @@ export default function About() {
                 organization="George Mason University Student Government"
                 period="September 2022 – October 2024"
                 description="Represented 40,000+ students on technology policy at campus."
+              />
+            </div>
+          </section>
+
+          {/* Speaking Section */}
+          <section className="mb-16 opacity-0 animate-fade-in-delay-2">
+            <h2 className="text-2xl font-bold mb-4">Speaking</h2>
+            <div className="space-y-6">
+              <SpeakingItem
+                title="Fireside Chat"
+                venue="Penn State University"
+                date="October 2024"
+                topic="About Circlez: Journey from Idea to Implementation"
+                description="Shared insights on balancing entrepreneurship with life, leadership lessons learned, and the personal journey behind co-founding Circlez."
+                showIcon={false}
+              />
+              <SpeakingItem
+                title="Technical Workshop"
+                venue="George Mason University"
+                date="April 2024"
+                topic="Introduction to Artificial Intelligence"
+                description="Led an interactive workshop introducing fundamental AI concepts, machine learning basics, and practical applications in modern software development."
+                showIcon={true}
+                link="https://youtu.be/Y5DEyoElLOI"
+              />
+              <SpeakingItem
+                title="Workshop"
+                venue="George Mason University"
+                date="April 2024"
+                topic="How to Have a Successful Hackathon Experience"
+                description="Shared insights on hackathon preparation, team formation, project planning, and effective presentation techniques."
+                showIcon={true}
+                link="https://youtu.be/5b4tQbQWHgo"
               />
             </div>
           </section>
@@ -240,4 +273,42 @@ function LeadershipItem({ title, organization, period, description }: {
       <p className="text-gray-400 mt-2">{description}</p>
     </div>
   );
+}
+
+function SpeakingItem({ title, venue, date, topic, description, showIcon = true, link }: {
+  title: string;
+  venue: string;
+  date: string;
+  topic: string;
+  description: string;
+  showIcon?: boolean;
+  link?: string;
+}) {
+  const Content = () => (
+    <div>
+      <div className="flex items-start justify-between">
+        <div>
+          <h3 className="text-lg font-semibold">{title}</h3>
+          <p className="text-gray-400">{venue} • {date}</p>
+        </div>
+        {showIcon && (
+          <div className="text-purple-400">
+            <FaMicrophoneAlt />
+          </div>
+        )}
+      </div>
+      <p className="text-gray-300 mt-1">{topic}</p>
+      <p className="text-gray-400 mt-2">{description}</p>
+    </div>
+  );
+
+  if (link) {
+    return (
+      <Link href={link} target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
+        <Content />
+      </Link>
+    );
+  }
+
+  return <Content />;
 }

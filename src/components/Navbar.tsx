@@ -47,6 +47,17 @@ export default function Navbar() {
                 Books
               </Link>
             </li>
+
+            <li>
+              <Link 
+                href="/dev"
+                className={`hover:text-gray-300 transition-colors whitespace-nowrap ${
+                  pathname === '/dev' ? 'text-white' : 'text-gray-400'
+                }`}
+              >
+                Services
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

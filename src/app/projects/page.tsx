@@ -28,7 +28,7 @@ const projects: Project[] = [
   },
   {
     title: "Cvrve",
-    description: "A full-stack hackathon and job aggregation platform. currently has 60,000+ users.",
+    description: "A full-stack hackathon and job aggregation platform. currently has 400,000+ users.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
     link: "https://www.cvrve.me",
     status: "In Development",
