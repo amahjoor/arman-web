@@ -416,6 +416,9 @@ export default function NotFound() {
                   <p className="text-gray-400 text-sm">Classic snake game - use arrow keys to control</p>
                 </button>
               </div>
+              <div className="mt-10 border-gray-800 text-gray-400 text-lg">
+                or, <Link href="/" className="text-purple-400 hover:text-purple-300 hover:underline">return home</Link>
+              </div>
             </>
           ) : (
             <>
@@ -531,6 +534,10 @@ export default function NotFound() {
                     </div>
                   </>
                 )}
+              </div>
+              
+              <div className="mt-16 pt-6 border-t border-gray-800 text-gray-400 text-lg">
+                or, <Link href="/" className="text-purple-400 hover:text-purple-300 hover:underline">return home</Link>
               </div>
               
               <div className="flex gap-4 justify-center">
