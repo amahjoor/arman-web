@@ -27,6 +27,13 @@ const projects: Project[] = [
     date: "August 2024 - Present"
   },
   {
+    title: "TED Talk Speech Assistant",
+    description: "Building a full-stack speech-writing assistant in collaboration with TEDx Wilmington, fine-tuning an LLM on TEDx frameworks like the 65-25-10 rule and Pledge–Turn–Prestige.",
+    tech: ["Next.js", "TypeScript", "React", "TailwindCSS", "Firebase", "LLMs"],
+    status: "In Development",
+    date: "December 2024 - Present"
+  },
+  {
     title: "Cvrve",
     description: "A full-stack hackathon and job aggregation platform. currently has 400,000+ users.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
@@ -35,9 +42,23 @@ const projects: Project[] = [
     date: "August 2024 - Present"
   },
   {
+    title: "iWannaGraduate",
+    description: "Interactive course dependency visualization tool with dynamic node highlighting, relationship tracking, and category-based filtering to help students plan their academic journey.",
+    tech: ["Next.js", "TypeScript", "React Flow", "Python", "BeautifulSoup"],
+    date: "March 2025",
+    status: "Completed"
+  },
+  {
+    title: "Aircraft Marshalling Pose Detection",
+    description: "Built a real-time gesture classifier using MediaPipe to detect 3D body poses from custom video data. Developed a frame extraction and preprocessing pipeline and trained a KNN model for signal classification.",
+    tech: ["Python", "MediaPipe", "OpenCV", "Scikit-learn", "CSV", "KNN"],
+    date: "April 2025",
+    status: "Completed"
+  },
+  {
     title: "Fluid Facilitator",
     description: "Built a two-axis robot with computer vision pipeline that identifies and tracks Aruco markers for automated drink delivery. Won award at PatriotHacks 2024.",
-    tech: ["Python", "OpenCV", "Arduino", "Computer Vision"],
+    tech: ["Python", "OpenCV", "Arduino", "Computer Vision", "Rust", "ArUco"],
     link: "https://devpost.com/software/fluid-flicker",
     status: "Completed",
     date: "October 2024"

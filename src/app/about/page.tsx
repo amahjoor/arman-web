@@ -141,27 +141,14 @@ export default function About() {
                 tech="Python, MediaPipe, OpenCV, Scikit-learn, CSV, KNN"
                 description="Built a real-time gesture classifier using MediaPipe to detect 3D body poses from custom video data. Developed a frame extraction and preprocessing pipeline and trained a KNN model for signal classification."
               />
-              <ProjectItem 
-                title="iWannaGraduate"
-                tech="Next.js, TypeScript, React Flow, Python, BeautifulSoup"
-                description="Interactive course dependency visualization tool with dynamic node highlighting, relationship tracking, and category-based filtering to help students plan their academic journey."
-              />
-              <ProjectItem 
-                title="Cvrve"
-                tech="Next.js, React, TypeScript, TailwindCSS"
-                description="Co-developed a hackathon aggregation platform used by an average 1.5k users daily, with over 5,000 users waitlisted."
-                link="https://www.cvrve.me"
-              />
-              <ProjectItem 
-                title="Aircraft Marshalling Pose Detection"
-                tech="Python, MediaPipe, OpenCV, Scikit-learn, KNN"
-                description="Built a real-time gesture classifier using MediaPipe to detect 3D body poses for aircraft ground handling signals, achieving 85% accuracy in noisy environments."
-              />
-              <ProjectItem 
-                title="Fluid Facilitator"
-                tech="Python, OpenCV, Rust, Arduino, ArUco"
-                description="Developed computer vision pipeline to detect & track ArUco markers for automated drink dispensing. Won 'Conquer the World' prize at PatriotHacks 2024."
-              />
+            </div>
+            <div className="mt-8">
+              <Link 
+                href="/projects" 
+                className="text-purple-400 hover:text-purple-300 inline-flex items-center"
+              >
+                View all projects →
+              </Link>
             </div>
           </section>
 
