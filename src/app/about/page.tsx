@@ -126,8 +126,14 @@ export default function About() {
             <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
             <div className="space-y-6">
               <ProjectItem 
+                title="Circlez"
+                tech="Next.js, TypeScript, React, TailwindCSS, PostgreSQL, Cloudflare"
+                description="Developed a comprehensive project management platform for the manufacturing industry, featuring task tracking, team collaboration, analytics dashboards, and resource management."
+                link="https://trycirclez.org"
+              />
+              <ProjectItem 
                 title="TED Talk Speech Assistant"
-                tech="Next.js, Typescript, React, TailwindCSS, Firebase"
+                tech="Next.js, TypeScript, React, TailwindCSS, Firebase, LLMs"
                 description="Building a full-stack speech-writing assistant in collaboration with TEDx Wilmington, fine-tuning an LLM on TEDx frameworks like the 65-25-10 rule and Pledge–Turn–Prestige."
               />
               <ProjectItem 
@@ -138,23 +144,23 @@ export default function About() {
               <ProjectItem 
                 title="iWannaGraduate"
                 tech="Next.js, TypeScript, React Flow, Python, BeautifulSoup"
-                description="Engineered an interactive course dependency graph visualization with dynamic node highlighting & relationship tracking. Implemented category-based filtering and built data pipeline to extract academic course information."
+                description="Interactive course dependency visualization tool with dynamic node highlighting, relationship tracking, and category-based filtering to help students plan their academic journey."
+              />
+              <ProjectItem 
+                title="Cvrve"
+                tech="Next.js, React, TypeScript, TailwindCSS"
+                description="Co-developed a hackathon aggregation platform used by an average 1.5k users daily, with over 5,000 users waitlisted."
+                link="https://www.cvrve.me"
+              />
+              <ProjectItem 
+                title="Aircraft Marshalling Pose Detection"
+                tech="Python, MediaPipe, OpenCV, Scikit-learn, KNN"
+                description="Built a real-time gesture classifier using MediaPipe to detect 3D body poses for aircraft ground handling signals, achieving 85% accuracy in noisy environments."
               />
               <ProjectItem 
                 title="Fluid Facilitator"
                 tech="Python, OpenCV, Rust, Arduino, ArUco"
-                description="Developed computer vision pipeline using OpenCV to detect & track ArUco markers for automated drink dispensing. Won 'Conquer the World' prize at George Mason University's PatriotHacks 2024."
-              />
-              <ProjectItem 
-                title="Cvrve"
-                tech="Next.js, React, TypeScript"
-                description="Co-developing a full-stack event management platform for hackathons with over 5,000 users waitlisted."
-                link="https://www.cvrve.me"
-              />
-              <ProjectItem 
-                title="StrucSure"
-                tech="Microsoft Azure, React, JavaScript, Node.js, Next.js, Vercel"
-                description="Developed an AI-powered bridge damage detection system with 78% recall rate. Won 3rd Place for Best use of AI/ML Innovation."
+                description="Developed computer vision pipeline to detect & track ArUco markers for automated drink dispensing. Won 'Conquer the World' prize at PatriotHacks 2024."
               />
             </div>
           </section>
