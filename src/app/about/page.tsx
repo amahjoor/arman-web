@@ -22,10 +22,10 @@ export default function About() {
             <h2 className="text-2xl font-bold mb-4">Education</h2>
             <div className="prose prose-invert max-w-none">
               <h3 className="text-xl font-semibold">George Mason University</h3>
-              <p className="text-gray-400">B.S. Computer Science • Expected May 2026</p>
-              <p className="text-gray-400">GPA: 3.38 • Positive Influence Award '23-'24 • Dean's List F22, S23</p>
+              <p className="text-gray-400">B.S. Computer Science • Expected December 2025</p>
+              <p className="text-gray-400">GPA: 3.5 • Positive Influence Award '23-'24 • Dean's List F22, S23, F24</p>
               <p className="text-gray-400 mt-4">Relevant Coursework:</p>
-              <p className="text-gray-400">Data Structures and Algorithms, Data Mining, Linear Algebra, Discrete Mathematics, Intro to Low-Level Programming, Calculus III, Logic and Language Models for Computer Science</p>
+              <p className="text-gray-400">Data Structures and Algorithms, Data Mining, Autonomous Robotics, Deterministic Optimization, Linear Algebra, Discrete Mathematics, Low-Level Programming, Calculus III, Logic and Language Models for Computer Science</p>
             </div>
           </section>
 
@@ -36,18 +36,21 @@ export default function About() {
               <SkillCategory 
                 title="Proficient" 
                 skills={[
-                  "TypeScript",
+                  "TypeScript/JavaScript",
                   "Next.js",
                   "React",
                   "TailwindCSS",
                   "Java",
                   "Python",
+                  "Node.js",
                   "Git/GitHub",
                   "Unix",
                   "Vim",
                   "TensorFlow",
                   "scikit-learn",
-                  "OpenAI API"
+                  "OpenCV",
+                  "PostgreSQL",
+                  "LLMs"
                 ]} 
               />
               <SkillCategory 
@@ -56,13 +59,14 @@ export default function About() {
                   "Microsoft Azure",
                   "C",
                   "HTML/CSS",
-                  "Node.js",
+                  "PyTorch",
                   "Spring Boot",
                   "LaTeX",
-                  "Taipy",
                   "Flutter",
-                  "Dart",
-                  "WordPress"
+                  "Swift",
+                  "ROS",
+                  "R",
+                  "AMPL"
                 ]} 
               />
             </div>
@@ -76,36 +80,42 @@ export default function About() {
                 title="Cofounder and CTO"
                 company="Circlez"
                 period="October 2024 - Present"
-                description="Developing a full-stack application for project management in the manufacturing industry."
+                description="Developed a full-stack application for project management within the manufacturing industry with Next.js, Typescript, React, TailwindCSS, PostgreSQL, Cloudflare."
               />
               <ExperienceItem 
-                title="SWE"
+                title="Software Engineer Intern"
                 company="Cvrve"
                 period="August 2024 - Present"
-                description="Developing a full-stack hackathon and job aggregation platform for hackathons and SWE roles with over 60,000 users."
+                description="Worked on Next.js frontend for a full-stack hackathon aggregation platform used by an average 1.5k users daily."
               />
               <ExperienceItem 
                 title="Research Assistant"
                 company="Autonomous Robotics Lab @ George Mason (RobotiXX)"
                 period="September 2024 - Present"
-                description="Working on image labeling for Spot robot's perception and creating color-coded maps based on laser scans for navigation purposes."
+                description="Annotated 200+ Spot robot images with predicted actions and instructions across diverse scenarios. Generated semantic map of GMU from LiDAR data, segmenting terrain into 5 classes."
+              />
+              <ExperienceItem 
+                title="Researcher"
+                company="OSCAR Undergraduate Student Research Program"
+                period="May 2024 - August 2024"
+                description="Trained 6 TensorFlow neural networks on 80k–160k math sequences to classify correctness and 4 error types, achieving 83% accuracy. Built a math error detection tool for handwritten worksheets using MathPIX OCR and GPT-4 for detailed feedback."
               />
               <ExperienceItem 
                 title="Teaching Assistant"
                 company="George Mason University Computer Science Department"
-                period="January 2023 – May 2024"
-                description="Designed 13 Python assignments for the CS curriculum. Created 123 minutes of YouTube content on basic programming concepts. Assisted students in programming labs."
+                period="January 2023 - May 2024"
+                description="Created 13 intro to programming assignments, impacting over 100 students per semester since Spring 2023. Created 123 minutes of YouTube content on basic programming concepts. Assisted students in programming labs."
               />
               <ExperienceItem 
                 title="Lead Mathematics Instructor"
                 company="Mathnasium"
-                period="December 2021 – January 2023"
+                period="December 2021 - January 2023"
                 description="Managed 60+ student learning plans, trained 8 instructors, and developed a comprehensive instructor handbook."
               />
               <ExperienceItem 
                 title="Center Assistant"
                 company="Kumon"
-                period="August 2018 – December 2021"
+                period="August 2018 - December 2021"
                 description="Assisted in grading 24,000+ student folders with near-perfect accuracy, trained 6 instructors in teaching methodologies."
               />
             </div>
@@ -115,6 +125,26 @@ export default function About() {
           <section className="mb-16 opacity-0 animate-fade-in-delay-2">
             <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
             <div className="space-y-6">
+              <ProjectItem 
+                title="TED Talk Speech Assistant"
+                tech="Next.js, Typescript, React, TailwindCSS, Firebase"
+                description="Building a full-stack speech-writing assistant in collaboration with TEDx Wilmington, fine-tuning an LLM on TEDx frameworks like the 65-25-10 rule and Pledge–Turn–Prestige."
+              />
+              <ProjectItem 
+                title="Aircraft Marshalling Pose Detection"
+                tech="Python, MediaPipe, OpenCV, Scikit-learn, CSV, KNN"
+                description="Built a real-time gesture classifier using MediaPipe to detect 3D body poses from custom video data. Developed a frame extraction and preprocessing pipeline and trained a KNN model for signal classification."
+              />
+              <ProjectItem 
+                title="iWannaGraduate"
+                tech="Next.js, TypeScript, React Flow, Python, BeautifulSoup"
+                description="Engineered an interactive course dependency graph visualization with dynamic node highlighting & relationship tracking. Implemented category-based filtering and built data pipeline to extract academic course information."
+              />
+              <ProjectItem 
+                title="Fluid Facilitator"
+                tech="Python, OpenCV, Rust, Arduino, ArUco"
+                description="Developed computer vision pipeline using OpenCV to detect & track ArUco markers for automated drink dispensing. Won 'Conquer the World' prize at George Mason University's PatriotHacks 2024."
+              />
               <ProjectItem 
                 title="Cvrve"
                 tech="Next.js, React, TypeScript"
@@ -134,10 +164,10 @@ export default function About() {
             <h2 className="text-2xl font-bold mb-4">Leadership</h2>
             <div className="space-y-6">
               <LeadershipItem 
-                title="Founder and President"
+                title="Founding President"
                 organization="Tech for Good"
-                period="July 2023 – Present"
-                description="Founded and grew a student-led organization focused on tech and social good (200+ members)."
+                period="July 2023 – December 2024"
+                description="Founded & grew Tech for Good from 0 to 200+ members. Launched initiative with Northern VA elderly centers, providing tech support and tutoring—resolved 30+ tech issues. Led hardware refurbishment with nonprofit partner; restored 200+ laptops for donation to underserved communities."
               />
               <LeadershipItem 
                 title="Undersecretary for Information Technology"
