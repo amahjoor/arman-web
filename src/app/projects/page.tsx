@@ -19,6 +19,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Prod",
+    description: "AI-powered browser-based music production tool that lets users create professional-quality beats. Features include an interactive drum sequencer, multi-track synthesis, AI beat generation using Google's Gemini 1.5 API, sound customization, pattern management, and real-time audio processing with Tone.js.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind", "Tone.js", "Gemini"],
+    link: "https://prod.kits.zip",
+    status: "In Development",
+    date: "April 2025"
+  },
+  {
     title: "Circlez",
     description: "PM software for manufacturing facilities.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel", "MongoDB"],
@@ -29,7 +37,7 @@ const projects: Project[] = [
   {
     title: "TED Talk Speech Assistant",
     description: "Building a full-stack speech-writing assistant in collaboration with TEDx Wilmington, fine-tuning an LLM on TEDx frameworks like the 65-25-10 rule and Pledge–Turn–Prestige.",
-    tech: ["Next.js", "TypeScript", "React", "TailwindCSS", "Firebase", "LLMs"],
+    tech: ["Next.js", "TypeScript", "React", "Tailwind", "Firebase", "LLMs"],
     link: "https://speech.armanmahjoor.com",
     status: "In Development",
     date: "December 2024 - Present"
@@ -43,27 +51,12 @@ const projects: Project[] = [
     date: "April 2025"
   },
   {
-    title: "Prod",
-    description: "AI-powered browser-based music production tool that lets users create professional-quality beats. Features include an interactive drum sequencer, multi-track synthesis, AI beat generation using Google's Gemini 1.5 API, sound customization, pattern management, and real-time audio processing with Tone.js.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind", "Tone.js", "Gemini"],
-    link: "https://prod.kits.zip",
-    status: "Completed",
-    date: "April 2025"
-  },
-  {
     title: "Cvrve",
     description: "A full-stack hackathon and job aggregation platform. currently has 400,000+ users.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
     link: "https://www.cvrve.me",
     status: "Completed",
-    date: "August 2024 - Present"
-  },
-  {
-    title: "iWannaGraduate",
-    description: "Interactive course dependency visualization tool with dynamic node highlighting, relationship tracking, and category-based filtering to help students plan their academic journey.",
-    tech: ["Next.js", "TypeScript", "React Flow", "Python", "BeautifulSoup"],
-    date: "March 2025 - Present",
-    status: "In Progress"
+    date: "August 2024 - April 2025"
   },
   {
     title: "Aircraft Marshalling Pose Detection",
@@ -71,6 +64,13 @@ const projects: Project[] = [
     tech: ["Python", "MediaPipe", "OpenCV", "Scikit-learn", "CSV", "KNN"],
     date: "April 2025",
     status: "Completed"
+  },
+  {
+    title: "iWannaGraduate",
+    description: "Interactive course dependency visualization tool with dynamic node highlighting, relationship tracking, and category-based filtering to help students plan their academic journey.",
+    tech: ["Next.js", "TypeScript", "React Flow", "Python", "BeautifulSoup"],
+    date: "March 2025 - Present",
+    status: "In Development"
   },
   {
     title: "Fluid Facilitator",
