@@ -30,23 +30,40 @@ const projects: Project[] = [
     title: "TED Talk Speech Assistant",
     description: "Building a full-stack speech-writing assistant in collaboration with TEDx Wilmington, fine-tuning an LLM on TEDx frameworks like the 65-25-10 rule and Pledge–Turn–Prestige.",
     tech: ["Next.js", "TypeScript", "React", "TailwindCSS", "Firebase", "LLMs"],
+    link: "https://speech.armanmahjoor.com",
     status: "In Development",
     date: "December 2024 - Present"
+  },
+  {
+    title: "ElderlyEats Website",
+    description: "Built website for ElderlyEats - a specialized meal delivery service designed for seniors.",
+    tech: ["Next.js", "React", "Tailwind", "TypeScript", "Vercel"],
+    link: "https://elderlyeats.armanmahjoor.com",
+    status: "Completed",
+    date: "April 2025"
+  },
+  {
+    title: "Prod",
+    description: "AI-powered browser-based music production tool that lets users create professional-quality beats. Features include an interactive drum sequencer, multi-track synthesis, AI beat generation using Google's Gemini 1.5 API, sound customization, pattern management, and real-time audio processing with Tone.js.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind", "Tone.js", "Gemini"],
+    link: "https://prod.kits.zip",
+    status: "Completed",
+    date: "April 2025"
   },
   {
     title: "Cvrve",
     description: "A full-stack hackathon and job aggregation platform. currently has 400,000+ users.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
     link: "https://www.cvrve.me",
-    status: "In Development",
+    status: "Completed",
     date: "August 2024 - Present"
   },
   {
     title: "iWannaGraduate",
     description: "Interactive course dependency visualization tool with dynamic node highlighting, relationship tracking, and category-based filtering to help students plan their academic journey.",
     tech: ["Next.js", "TypeScript", "React Flow", "Python", "BeautifulSoup"],
-    date: "March 2025",
-    status: "Completed"
+    date: "March 2025 - Present",
+    status: "In Progress"
   },
   {
     title: "Aircraft Marshalling Pose Detection",
@@ -74,11 +91,11 @@ const projects: Project[] = [
   },
   {
     title: "GrocerAi",
-    description: "A web app that creates personalized shopping lists and finds the most efficient route through stores using Dijkstra's algorithm. Integrated with Kroger API and LangChain for NLP.",
+    description: "A web app that creates personalized shopping lists and finds the most efficient route through stores using Dijkstra's algorithm. Integrated with the Kroger grocery store's API, and LangChain for NLP.",
     tech: ["React", "Node.js", "Python", "LangChain", "Azure", "JavaScript"],
     link: "https://devpost.com/software/grocerai",
     status: "Completed",
-    date: "February 2024"
+    date: "September 2024"
   },
   {
     title: "Pomodoro Timer",
