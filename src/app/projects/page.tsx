@@ -29,10 +29,10 @@ const projects: Project[] = [
   {
     title: "Circlez",
     description: "PM software for manufacturing facilities.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel", "MongoDB"],
+    tech: ["Next.js", "React", "TypeScript", "Tailwind", "Cloudflare"],
     link: "https://www.circlez-online.com",
     status: "In Development",
-    date: "August 2024 - Present"
+    date: "October 2024 - Present"
   },
   {
     title: "TED Talk Speech Assistant",
