@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} - Arman Mahjoor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../blog.html" class="nav-link">Blog</a>
+            <!-- <a href="../projects.html" class="nav-link">Projects</a> -->
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="blog-post">
+            <header class="post-header">
+                <div class="post-date">{{DATE}}</div>
+                <h1 class="post-title">{{TITLE}}</h1>
+            </header>
+            
+            <div class="post-content">
+                {{CONTENT}}
+            </div>
+            
+            <footer class="post-footer">
+                <a href="../blog.html" class="back-link">← Back to Blog</a>
+            </footer>
+        </article>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
