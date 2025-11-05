@@ -1,6 +1,7 @@
 if (typeof module !== 'undefined' && module.exports) {
     const fs = require('fs');
     const path = require('path');
+    const { marked } = require('marked');
     
     const CONTENT_DIR = path.join(__dirname, 'posts-txt');
     const POSTS_DIR = path.join(__dirname, 'posts-html');
@@ -11,6 +12,7 @@ if (typeof module !== 'undefined' && module.exports) {
         const lines = content.split('\n');
         let title = '';
         let date = '';
+        let status = 'done';
         let contentStart = 0;
         
         for (let i = 0; i < lines.length; i++) {
@@ -20,6 +22,8 @@ if (typeof module !== 'undefined' && module.exports) {
                 title = line.substring(6).trim();
             } else if (line.startsWith('date:')) {
                 date = line.substring(5).trim();
+            } else if (line.startsWith('status:')) {
+                status = line.substring(7).trim().toLowerCase();
             } else if (line === '---') {
                 contentStart = i + 1;
                 break;
@@ -29,16 +33,12 @@ if (typeof module !== 'undefined' && module.exports) {
         const contentLines = lines.slice(contentStart);
         const rawContent = contentLines.join('\n').trim();
         
-        return { title, date, rawContent };
+        return { title, date, status, rawContent };
     }
     
     function contentToHtml(content) {
-        const paragraphs = content.split('\n\n').filter(p => p.trim());
-        
-        return paragraphs.map(p => {
-            const trimmed = p.trim().replace(/\n/g, ' ');
-            return `                <p>\n                    ${trimmed}\n                </p>`;
-        }).join('\n\n');
+        const html = marked(content);
+        return html.split('\n').map(line => '                ' + line).join('\n').trim();
     }
     
     function generateHtmlFromTemplate(title, date, content) {
@@ -71,16 +71,21 @@ if (typeof module !== 'undefined' && module.exports) {
         const posts = [];
         
         files.forEach(file => {
-            if (path.extname(file) === '.txt') {
+            if (path.extname(file) === '.md') {
                 console.log(`  📄 Found: ${file}`);
                 
                 const filePath = path.join(CONTENT_DIR, file);
                 const txtContent = fs.readFileSync(filePath, 'utf-8');
                 
-                const { title, date, rawContent } = parseTxtFile(txtContent);
+                const { title, date, status, rawContent } = parseTxtFile(txtContent);
+                
+                if (status === 'draft') {
+                    console.log(`    ⏭️  Skipped: Draft post`);
+                    return;
+                }
                 
                 if (title && date && rawContent) {
-                    const htmlFilename = file.replace('.txt', '.html');
+                    const htmlFilename = file.replace('.md', '.html');
                     const htmlFilePath = path.join(POSTS_DIR, htmlFilename);
                     
                     const html = generateHtmlFromTemplate(title, date, rawContent);
@@ -128,6 +133,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     
     await loadPostsConfig();
     loadBlogPosts();
+    makeSortableTable();
     
     function updateActiveNavLink() {
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -183,6 +189,55 @@ async function loadPostsConfig() {
         console.error('Error loading posts.json:', error);
         blogPosts = [];
     }
+}
+
+function makeSortableTable() {
+    const tables = document.querySelectorAll('.post-content table');
+    
+    tables.forEach(table => {
+        const headers = table.querySelectorAll('th');
+        
+        headers.forEach((header, index) => {
+            header.style.cursor = 'pointer';
+            header.style.userSelect = 'none';
+            header.title = 'Click to sort';
+            
+            header.addEventListener('click', () => {
+                const tbody = table.querySelector('tbody');
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                
+                const currentSort = header.dataset.sort || 'none';
+                const isAscending = currentSort === 'asc';
+                
+                headers.forEach(h => {
+                    h.dataset.sort = 'none';
+                    h.textContent = h.textContent.replace(' ▲', '').replace(' ▼', '');
+                });
+                
+                rows.sort((a, b) => {
+                    const aCell = a.cells[index].textContent.trim();
+                    const bCell = b.cells[index].textContent.trim();
+                    
+                    const aNum = parseFloat(aCell.replace(/[$,%]/g, ''));
+                    const bNum = parseFloat(bCell.replace(/[$,%]/g, ''));
+                    
+                    let comparison = 0;
+                    if (!isNaN(aNum) && !isNaN(bNum)) {
+                        comparison = aNum - bNum;
+                    } else {
+                        comparison = aCell.localeCompare(bCell);
+                    }
+                    
+                    return isAscending ? -comparison : comparison;
+                });
+                
+                rows.forEach(row => tbody.appendChild(row));
+                
+                header.dataset.sort = isAscending ? 'desc' : 'asc';
+                header.textContent += isAscending ? ' ▼' : ' ▲';
+            });
+        });
+    });
 }
 
 async function loadBlogPosts() {

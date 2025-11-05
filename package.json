@@ -1,0 +1,15 @@
+{
+  "name": "newpersonalwebsite",
+  "version": "1.0.0",
+  "description": "Repo for my personal website at [mahjoor.com](https://mahjoor.com). Simple HTML/CSS/JS with blog posts.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^16.4.1"
+  }
+}

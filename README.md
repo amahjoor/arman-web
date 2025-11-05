@@ -8,10 +8,15 @@ Repo for my personal website at [mahjoor.com](https://mahjoor.com). Simple HTML/
 ```
 title: My Post
 date: November 4, 2025
+status: done
 ---
-Write content here.
+Write content in **markdown**. Tables, links, formatting supported.
 
-Blank lines = new paragraphs.
+| Column 1 | Column 2 |
+|----------|----------|
+| Data     | More     |
+
+Set status to `draft` to skip generating HTML.
 ```
 
 2. Run: `node script.js`
@@ -20,7 +25,7 @@ Blank lines = new paragraphs.
 
 ## Folders
 
-- `posts-txt/` - Edit these
+- `posts-txt/` - Edit these (.md files)
 - `posts-html/` - Auto-generated, don't edit
 - `template.html` - Change design here
 
