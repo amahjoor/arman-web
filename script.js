@@ -14,19 +14,33 @@ if (typeof module !== 'undefined' && module.exports) {
         let date = '';
         let status = 'done';
         let contentStart = 0;
+        let lastMetadataIndex = -1;
         
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i].trim();
             
             if (line.startsWith('title:')) {
                 title = line.substring(6).trim();
+                lastMetadataIndex = i;
             } else if (line.startsWith('date:')) {
                 date = line.substring(5).trim();
+                lastMetadataIndex = i;
             } else if (line.startsWith('status:')) {
                 status = line.substring(7).trim().toLowerCase();
+                lastMetadataIndex = i;
             } else if (line === '---') {
                 contentStart = i + 1;
                 break;
+            } else if (lastMetadataIndex >= 0) {
+                // We've seen metadata, now we're past it
+                // Skip blank lines after metadata, start content at first non-blank line
+                if (line === '') {
+                    continue; // Keep looking for content start
+                } else {
+                    // Found non-blank, non-metadata line - this is where content starts
+                    contentStart = i;
+                    break;
+                }
             }
         }
         
