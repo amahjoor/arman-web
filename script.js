@@ -3,7 +3,7 @@ if (typeof module !== 'undefined' && module.exports) {
     const path = require('path');
     const { marked } = require('marked');
     
-    const CONTENT_DIR = path.join(__dirname, 'posts-txt');
+    const CONTENT_DIR = path.join(__dirname, 'posts-md');
     const POSTS_DIR = path.join(__dirname, 'posts-html');
     const OUTPUT_FILE = path.join(__dirname, 'posts.json');
     const TEMPLATE_FILE = path.join(__dirname, 'template.html');
