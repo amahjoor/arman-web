@@ -7,14 +7,22 @@ What I realized over the years is that a lot of it would sit untouched for years
 
 To be honest I still have a lot of things that I don't need. I need to get rid of many of them.
 
-You can think of your room as Macbook or iPhone storage. It is limited, and for some reason half of it eventually gets taken up by "System Data" and "MacOS" or "iPhone". And then you just gotta factory reset it all. Apps tell you when they were last opened and how much time you spent on them in your screentime. For a lot of the apps, it would have been months or years since they were last launched. 
+You can think of your room as Macbook or iPhone storage. 
+
+Apps tell you when they were last opened and how much time you spent on them in your screentime. For a lot of the apps, it would have been months or years since they were last launched. 
+
+You can think of your things the same way: as apps, files, etc.
+
+It is limited, and for some reason half of it eventually gets taken up by "System Data" and "MacOS" or "iPhone". And then you just gotta factory reset it all.  
+
+It's like a room getting bloated with things you're collecting over the years. You just keep on collecting what looks cool, but is it really what you need? It's like if you were to pay for every single YC SaaS: it all looks cool and all, which is why YC funded it. But do you really need all of it? A lot of it is achieving the same thing too. 
 
 So if you see yourself in this situation, here are the benefits of freeing your storage on your device, and how it translates to your room.
 
 1. Your device will run faster -> you'll be able to know where everything in your room is quickly, spend less time looking for things or forgetting something you misplaced. 
 2. You'll have more space to do something that requires a lot of it, like making YouTube videos -> you'll be able to have friends hang out in your room, record a podcast, do an art project, yoga... 
 3. You'll be less distracted. Less apps = less distractions, and more lean: having just those that you really truly need -> you'll have less random worries or thoughts, easier to lock in on the immediate present task, especially if you put your phone somewhere you cannot easily access.
-4. It will give your device room to breathe. If you ever need to download something, you don't need to worry about optimizing your storage by deleting caches. Do you really want to be in your storage settings 1+ times/week? -> Your room will have more breathing space. It'll be easier to get clothes from your closet. Easier to find your beloved pen. You won't need to worry about finding space for something new.
+4. It will give your device room to breathe. If you ever need to download something, you don't need to worry about optimizing your storage by deleting caches. Do you really want to be in your storage settings 1+ times/week? -> Your room will have more breathing space. It'll be easier to get clothes from your closet. Easier to find your beloved pen. You won't need to worry about finding space for something new. You won't need to clean your room to optimize for more storage and less clutter, you're just reorganizing the problem vs getting rid of it by letting go. 
 
 There are a lot of benefits that come to having a nice, minimal, clean room. 
 
@@ -23,6 +31,8 @@ But the best thing about it is that you'll be able to turn it into a space that 
 That's what your room should ultimately feel like. A space that brings you joy. 
 
 So how do you let go of your things? 
+
+If you're like me, you could probably easily do an 80/20 split or more on the things you don't need vs the things you might need.
 
 What I'd say is this. Start by targeting the most immediate things that come to mind. 
 
@@ -49,6 +59,10 @@ Not to mention the mental toll: 'Oh, did I check Depop today to see if anyone bo
 And then when you go on Depop or Marketplace or any of these other apps, you start seeing posts and get distracted. 
 
 So unless it's something truly worth the time I'd say don't try selling stuff. Maybe delegate it to someone like a younger sibling you want to teach financial principles or someone who's interested. Otherwise just donate them to someone who can use it. 
+
+Also, don't worry about running out of clothes. If you love them you'll take good care of them and won't run out. You can rewear a lot of things (jackets, jeans, etc.) and your laundry and closet will be easier to manage. 
+
+You'll also appreciate your clothes more and take better care of them. You'll fold them better. You'll understand them. 
 
 Then go through the things on your tabletops and storage areas. How often do you use it? Again, does it bring you joy? 
 
