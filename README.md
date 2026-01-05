@@ -4,7 +4,7 @@ Repo for my personal website at [mahjoor.com](https://mahjoor.com). Simple HTML/
 
 ## Add a Blog Post
 
-1. Create `.txt` file in `posts-txt/`:
+1. Create `.md` file in `posts-md/`:
 ```
 title: My Post
 date: November 4, 2025
