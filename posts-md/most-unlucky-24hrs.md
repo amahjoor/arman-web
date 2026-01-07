@@ -1,4 +1,4 @@
-title: The Most Unlucky Ones
+title: The most unlucky days
 date: January 6, 2026
 ---
 Today was a crazy one.
