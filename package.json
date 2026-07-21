@@ -4,6 +4,7 @@
   "description": "Repo for my personal website at [mahjoor.com](https://mahjoor.com). Simple HTML/CSS/JS with blog posts.",
   "main": "script.js",
   "scripts": {
+    "generate": "node script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

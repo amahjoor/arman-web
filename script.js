@@ -70,10 +70,10 @@ if (typeof module !== 'undefined' && module.exports) {
     }
     
     function generatePosts() {
-        console.log('🔍 Scanning posts-txt directory...');
+        console.log('🔍 Scanning posts-md directory...');
         
         if (!fs.existsSync(CONTENT_DIR)) {
-            console.error('❌ posts-txt directory not found!');
+            console.error('❌ posts-md directory not found!');
             process.exit(1);
         }
         
