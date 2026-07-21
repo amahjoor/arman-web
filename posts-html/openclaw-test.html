@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI - Arman Mahjoor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../blog.html" class="nav-link">Blog</a>
+            <!-- <a href="../projects.html" class="nav-link">Projects</a> -->
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <article class="blog-post">
+            <header class="post-header">
+                <div class="post-date">February 23, 2026</div>
+                <h1 class="post-title">Agentic AI</h1>
+            </header>
+            
+            <div class="post-content">
+                <p>I&#39;ve been in SF for a week and one thing I realized is that we are in a bubble with agentic AI. </p>
+                <p>The truth is that out of the thousands of startups working on agentic AI, there&#39;s only going to be a few true winners. </p>
+                <p>The ones that win will be the ones that lead with an infrastructure layer. There are many wrappers but the foundational layers are the ones that have a true moat.</p>
+                <p>I think there&#39;s a few layers of tech companies. I&#39;ll list a few companies specifically for the pure sake of illustrating it.
+                0. The world wide web. We wouldn&#39;t have much without it. Thanks Tim Berners-Lee. 
+                1a. Cloud tier: the companies that control the cloud (google, microsoft, aws.) These companies have the biggest moat tbh since the whole internet is built on top of them.
+                1b. OS level tier: Linux, Windows, MacOS, etc. since these are the layers that allow us to unlock everything below.
+                2a. OpenAI/Anthropic tier: language models that are built on top of the cloud.
+                2b. Stripe tier: companies like Stripe, MongoDB, Supabase, Notion, etc. that are built on top of 1, are their own infra layer for whatever respective thing they are working on, and are not reliant on 2a.
+                3. Cursor/OpenClaw tier: companies that are built on top of language models from 2a. Sure Cursor is working on their own language models too but still is an underdog to the 2a LMs. I think most agentic startups being built are in this tier and competing against each other in red ocean.
+                4. Startups that are tools for people doing 3 or are a layer on top of 3. I guess you could think of ezspeak.app or AgentBudget or other tools that assist in optimizing 3 or working with 2b.</p>
+                <p>So I feel like agentic AI would fall around 3. If you are creating an agentic layer that is independent of other layers then it&#39;s 3, if it creates a new model and doesn&#39;t rely on pre-existing closed-source models then it would be 2, but if it&#39;s building on top of OpenClaw as a base then it would be 4.</p>
+                <p>I think I am interested in 3 right now. I wonder if there&#39;s a better approach to an agentic layer aside from OpenClaw. OpenClaw is limited in actions as it&#39;s a super-connector but it&#39;s not able to operate with browser use the same way we could as a human. Maybe there&#39;s a better approach to memory as well. So I am really interested in exploring it. OpenClaw is a big-ass open source project though so it&#39;s interesting. I&#39;m sure people are thinking about this in improving OpenClaw.</p>
+                <p>I think it&#39;s so great that OpenClaw is open-source. If it was closed source we&#39;d be moving 4x slower I bet. Peter locked tf in and dropped it and now the whole world is going crazy on it. This is truly the power of open source. People are alarmed. People are trying to build and opportunity is created for people to capitalize on top of OpenClaw and maybe some motivation to compete against it. </p>
+                <p>I wonder if there&#39;s a way to beat the bot-detection algorithms of the strictest closed source platforms like Meta for example. I feel like a company that would claim to do this would pull a ScaleAI (outsource workers from Kenya or another country and pay them a low wage to do agentic navigation on top of software with human people [automation is just a human doing it for stricter platforms]). TBH i think Instagram is the strongest platform for closed source.</p>
+                <h2>Idea</h2>
+                <p>What if we have an ecosystem where we have expert agents. </p>
+                <p>Going to share some experts I am thinking about bringing to life with an LLM. 
+                Experts like (with their associated data source, though a well-designed system prompt could do to start)</p>
+                <ul>
+                <li>Paul Graham (<a href="https://www.paulgraham.com/articles.html">https://www.paulgraham.com/articles.html</a>)</li>
+                <li>Abraham Lincoln (<a href="https://www.abrahamlincolnonline.org/lincoln/speeches/speechintro.htm">https://www.abrahamlincolnonline.org/lincoln/speeches/speechintro.htm</a>)</li>
+                <li>Benjamin Graham (Intelligent Investor)</li>
+                <li>Sam Altman (<a href="https://blog.samaltman.com/">https://blog.samaltman.com/</a>)</li>
+                <li>Mom Test (<a href="https://www.momtestbook.com/">https://www.momtestbook.com/</a>)</li>
+                <li>Julius Caesar (<a href="https://www.gutenberg.org/cache/epub/10657/pg10657.txt">https://www.gutenberg.org/cache/epub/10657/pg10657.txt</a>)</li>
+                <li>Peter Steinberger (openclaw github, <a href="https://steipete.me/">https://steipete.me/</a>)</li>
+                <li>Lex Fridman (<a href="https://lexfridman.com/category/transcripts/">https://lexfridman.com/category/transcripts/</a>)</li>
+                <li>Arman Mahjoor (mahjoor.com/blog)
+                At first, we can create detailed system prompts for speed (instead of creating RAG models, since GPT5.2 is probably trained on these sources anyways.)</li>
+                </ul>
+                <p>Here&#39;s the idea</p>
+                <h2>Cloud server</h2>
+                <p>This all needs to run on the cloud of course. I don&#39;t know what we&#39;d use for the cloud infrastructure here yet. Maybe AWS, Hetzner, or something else. At first though it would run localhost. Maybe I&#39;d need Docker as well for containerization....... and then the database shit. But yea for now at first we&#39;d do localhost.</p>
+                <h2>Internet use layer</h2>
+                <p>There are a few ways we can access the internet.</p>
+                <h3>Browser layer</h3>
+                <p>If it can be done on the browser. Most websites don&#39;t have crazy guardrails against bots unless it&#39;s Meta. If it&#39;s Meta or other companies, we may want to use a stealthy browser like a) Camoufox - open source anti-detect browser that we could use instead of Chromium, b) undetected-chromedriver, c) puppeteer-extra-plugin-stealth, d) Playwright stealth extension which is Playwright&#39;s stealthy base browser profile, e) Browserless (browserless.io). We could find work-arounds like using Buffer and automating on top of buffer. Chromium + Playwright, or Browserbase </p>
+                <h3>Mobile layer</h3>
+                <p>If it can&#39;t be done on the browser. For example Clash of Clans, Clash Royale, or some other app-based thing. </p>
+                <h3>Network layer</h3>
+                <p>In addition to this, we&#39;ll need to consider a network/IP layer. AI says &#39;residential or mobile proxies, geo/ASN rotation, sane request rates, TLS fingerprints that match your claimed browser.&#39;</p>
+                <h3>Physical layer</h3>
+                <p>When a task just isn&#39;t automatable cuz their algorithms are too good. Maybe some things with Meta.</p>
+                <h2>Tool use layer</h2>
+                <p>How are we going to interact? We are going to make our own custom implementation with a few considerations.</p>
+                <h3>Deterministic Layer: Vercel Agent Browser</h3>
+                <p>Headless browser automation CLI for AI agents. It is RUST BASED so HELLA FAST, with Node.js fallback. </p>
+                <h2>Agent layer</h2>
+                <p>Here comes the fun part. The agent is in charge of a few things. </p>
+                <h3>Memory</h3>
+                <p>We need to create a really good memory layer. This should be one of the best memory layer. We develop it in-house. Should be able to remember long term and short term. We may want to take inspiration from how really good human memory works.</p>
+                <h3>Experts</h3>
+                <p>Experts are basically the people that agents are based on. For example, Paul Graham, Mom Test, Sam Altman, Benjamin Graham, etc. these people are all experts that we can design. </p>
+                <h3>Workflows</h3>
+                <p>We want to create a comprehensive system for workflows. The core idea is that anything you&#39;d normally do on a computer should be captured as a workflow node. Not the tiny sub-steps, but the meaningful operation itself. </p>
+                <p>If it were an API call if an API existed, it&#39;s a node. For example: </p>
+                <ul>
+                <li>linkedin_post(text, media): post on linkedin</li>
+                <li>linkedin_messages_read() — view your message inbox</li>
+                <li>linkedin_message_reply(thread_id, text) — respond to a message</li>
+                <li>twitter_post(text, media)</li>
+                <li>github_open_pr(repo, branch, title, body)</li>
+                </ul>
+                <p>The browser becomes the execution layer. The node hides all the messy substeps that are involved with the operation like navigating, clicking, typing, submitting, verifying, etc. and exposes a clean interface identical to what a real API should look like. </p>
+                <p>There are three levels to this: 
+                Level 1 - Workflow: the sequence of operations an agent composes to accomplish a goal. e.g. check_messages -&gt; summarize -&gt; reply_to_top_three
+                Level 2 - Node: the individual operations, each with typed inputs, a return value, and defined error states. This is where the library lives.
+                Level 3 - Execution: the actual browser automation steps underneath. The agent never needs to think about this level.</p>
+                <p>We will then be able to create a node library based off of the past things we&#39;ve automated and be able to reuse them.</p>
+                <p>Later on, we could create vendor neutral nodes. General workflow nodes that define operations like logging in and semantically matches them with the platform specific</p>
+                <p>This is another big thing - how do we create a system that can figure out how to create these nodes? </p>
+                <p>The approach I am thinking about is the following: </p>
+                <ul>
+                <li>Agent attempts to do it cold once (think Manus.) </li>
+                <li>Before each operation it does, it confirms with the human. Its like &#39;i&#39;m going to click here. confirm?&#39; or &#39;i&#39;m going to send this. confirm?&#39; with the option to reject and tell what to do differently similar to how Claude Code works. This keeps the human in the loop as it does the work (without having them do it themselves.)</li>
+                <li>After it succeeds, it has the steps figured out and creates the node definition, consisting of: 
+                -- name: what the operation is called
+                -- inputs: the typed parameter it needs (text, media, thread ID, etc.)
+                -- steps: the actual Playwright-style instructionsit executes deterministically on future runs<br>-- return value: what it gives back on success (post ID, URL, confirmation, bunch of thread IDs, etc.)
+                -- error states: these start as educated guesses on run 1 and get real over time through accumulated failures across real executions.
+                Once a node exists, future runs dont involve the LLM at all, it just executes the steps deterministically: fast and reliable.</li>
+                </ul>
+                <p>If the UI of the website gets updated and steps break, the AI will kick back in and relearn the steps (with human in the loop again.) It will keep versioning as well (so the older broken ones it has)</p>
+                <p>Later on, we&#39;ll also have a heartbeat system to periodically run each node in the background to verify it&#39;s still working (to minimize chance of user having to encounter the broken node.)</p>
+                <ul>
+                <li>Read only are easy. </li>
+                <li>Write need a sandbox or test account.</li>
+                </ul>
+                <p>We&#39;ll generally keep the workflows open source except for certain ones that are extremely challenging to automate on top of that have protection over it (Meta) to keep defensability, until we create our own browser use layer that developers can use then open source even the hardest ones since the underlying logic of our tool would be what&#39;s closed. </p>
+                <h1>MOAT</h1>
+                <p>This is an interesting question I need to figure out. What is our moat?</p>
+                <p>What I notice is that things that are open source are usually things that are hard or not worth keeping a moat or better off given to people to work on to advance than set it as a moat. So for example, stealth infra. This is something that&#39;s always changing and there&#39;s not really a moat to it because of that. It&#39;s not a defensible advantage. </p>
+                <p>Some moat ideas: </p>
+                <ul>
+                <li>Lesson / workflow representation
+                -- Becoming the standard for GUI workflows by creating a library of defining vendor neutral ways to describe how to do X in UI Y.
+                --- for example: logging in, creating a general standard way to automate logging in - vendor neutral - and doing it for the different platforms with their specific backend for them that maps the general to them semantically.  </li>
+                <li>Domain specific tuning </li>
+                <li>Accumulated trajectories + feedback. 
+                -- As people use Agent School, we are able to collect a corpus of real executions. Gets richer and more specialized over time. Competitors would need to not just copy our code but recreate the data and domain expertise.</li>
+                <li>Lots of data+trajectories+feedback on when web vs mobile works better, where things break, how to recover</li>
+                <li>Data + decision trace moat</li>
+                <li>Harder (will get there over time): network-effect / ecosystem moat</li>
+                <li>Potential exploration: vertical/domain moat - if we want to go all in on something. Domain edge cases, specific systems, policies, encoded in data and workflows that others dont have. </li>
+                <li>Automation magic on top of the hard ass software (Meta)</li>
+                </ul>
+            </div>
+            
+            <footer class="post-footer">
+                <a href="../blog.html" class="back-link">← Back to Blog</a>
+            </footer>
+        </article>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
