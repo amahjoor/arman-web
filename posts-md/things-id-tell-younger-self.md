@@ -19,9 +19,9 @@ Here are 11 things I thought I'd let him know.
 
 And now, I try to think what my older self would tell me. 
 
-I think it's important to surround yourself with people that have good habits, or are locked in on things that you want to also be locked in on - because we are influenced by the people around us. 
+It's important to surround yourself with people that have good habits, or are locked in on things that you want to also be locked in on - because we are influenced by the people around us. 
 
-I think we are influenced by the people around us in an exponential decay pattern. 
+I like to model how we are influenced by the people around us in an exponential decay pattern. 
 
 Person 1 we spend most time with weight: 1
 Person 2 weight: 1/2
@@ -30,4 +30,8 @@ Person 4 weight: 1/8
 Person 5 weight: 1/16
 and so on and so forth. 
 
-It's not perfectly mathematical like this in real life but I feel like the concept holds up well with habits, ambition, decision-making.
+It's not perfectly mathematical in real life but I feel like the concept holds up well with habits, ambition, decision-making.
+
+So I'd tell this to my older self.
+
+I'd also tell my older self what I'd tell my younger self - like you better be good at piano by now and followed some of these principals like trusting your gut more. 
