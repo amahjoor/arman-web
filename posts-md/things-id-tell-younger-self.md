@@ -24,10 +24,15 @@ It's important to surround yourself with people that have good habits, or are lo
 I like to model how we are influenced by the people around us in an exponential decay pattern. 
 
 Person 1 we spend most time with weight: 1
+
 Person 2 weight: 1/2
+
 Person 3 weight: 1/4
+
 Person 4 weight: 1/8
+
 Person 5 weight: 1/16
+
 and so on and so forth. 
 
 It's not perfectly mathematical in real life but I feel like the concept holds up well with habits, ambition, decision-making.
